@@ -21,7 +21,7 @@ root.filename = filedialog.askdirectory()
 
 onlyfiles = [f for f in listdir(root.filename) if isfile(join(root.filename, f))]
 
-export_folder = root.filename + "/" + "{:.2f}".format(fade_time_fraction) + "_fadeinout_samples/"
+export_folder = root.filename + "/" + "{:.5f}".format(fade_time_fraction) + "_fadeinout_samples/"
 
 Path(export_folder).mkdir(parents=True, exist_ok=True)
 
